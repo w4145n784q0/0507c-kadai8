@@ -9,10 +9,8 @@ int main()
 		std::cout << "ƒŒƒxƒ‹‚ð“ü—ÍË";
 		std::cin >> lv;
 		st.SetLv(lv);
-		//if (!st.SetLv(lv)) break;
-		if (st.GetLv() <= 0)
-			break;
-		
+		if (!st.SetLv(lv)) 	break;
+	
 		st.Calc();
 		std::cout << " ‚g‚o =" << st.GetHp() << "\n";
 		std::cout << "UŒ‚—Í=" << st.GetAtk() << "\n";

@@ -5,7 +5,7 @@ class Status
 	int lv, hp, atk, def; //各パラメータ
 	//メンバ関数
 public:
-	void SetLv(int i);
+	bool SetLv(int i);
 	void Calc();
 	int GetHp();
 	int GetAtk();

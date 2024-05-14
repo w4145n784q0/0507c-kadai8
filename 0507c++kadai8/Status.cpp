@@ -1,13 +1,23 @@
 #include "Status.h"
 
-void Status::SetLv(int i)
+bool Status::SetLv(int i)
 {
-    if (i >= 100) 
+    if (i > 0)
     {
-        i = 99;
+        if (i >= 100)
+        {
+            lv = 99;
+        }
+        else {
+            lv = i;
+        }
+  
+        return true;
+    }
+    else {
+        return false;
     }
 
-    lv = i;
 }
 
 void Status::Calc()
